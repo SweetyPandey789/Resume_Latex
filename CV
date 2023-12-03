@@ -1,0 +1,188 @@
+
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{SWEETY PANDEY} \\[6pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{} C @{} C}
+{{\raisebox{-0.05\height}{\faEnvelope} sikhasweety29@gmail.com }} 
+{{\raisebox{-0.05\height}{\faGithub} https://github.com/SweetyPandey789 }} 
+{{\raisebox{-0.05\height}{\faMobile} +916200852275}} 
+{{\href{https://www.linkedin.com/in/sweety-pandey-11401722b/}{\raisebox{-0.05\height}{\faLinkedin} https://www.linkedin.com/in}}}
+\end{tabularx}
+
+%EDUCATION
+\section{\textbf{EDUCATION}}
+\begin{tabularx}{\linewidth}{ @{}l r@{}}
+\textbf{UNIVERSITY COLLEGE OF ENGINEERING AND TECHNOLOGY,VBU ,HAZARIBAGH JHARKHAND} \hfill \textbf{ 2021 -  2025} \\[4pt]
+ \textbf{BTech in Computer Science and Engineering}\hfill \textbf{ CGPA: 8.83/10}\\[4pt]
+ \\[4pt]
+\textbf{ADITYA BIRLA PUBLIC SCHOOL,REHLA}\\[4pt]
+\textbf{AISSCE(Class XII)}\hfill \textbf{Aggregate 82.24}
+\\[4pt] \\[4pt]
+\textbf{B.N.T Saint Mary's SCHOOL,GARHWA} \\[4pt]
+\textbf{AISSE(Class X)}\hfill \textbf{CGPA 9.2}\\[4pt]
+\end{tabularx}
+\\[4pt]
+%EXPERIENCE
+\section{\textbf{EXPERIENCE}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{OPEN SOURCE CONTRIBUTOR} \hfill \textbf{MAY 2023 - MARCH-2024} \\[4pt]
+\\[4pt]
+\textbf{SOCIAL SUMMER OF CODE(SSOC)} (MAY 2023 - JULY 2023) \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item As a contributor ,I worked on frontend project which is basicalLy based on HTML,CSS and JAVASCRIPT.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{SOCIAL WINTER OF CODE(SWOC)} (JAN 2024 - MARCH 2024) \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Working on bulding project of Digital Clock which will denote current timing with hour,minute and second.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\\[4pt]
+% ACADEMIC PROJECTS
+\section{\textbf{TECHNICAL SKILLS}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Programming Languages: C,Java,HTML,CSS,Javascript} \\[4pt]
+\textbf{Databases:MySQL}\\[4pt]
+\textbf{Version Control:Git/Github}
+
+\end{tabularx}
+\\[4pt]
+% ACADEMIC PROJECTS
+\section{\textbf{PROJECTS}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://github.com/SweetyPandey789/Digital-Clock}{DIGITAL CLOCK}} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Digital Clock is a web based clock which shows current time.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\\[4pt]
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://github.com/SweetyPandey789/Disney-hotstar-clone}{DISNEY+ HOTSTAR CLONE}} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Hotstar clone is a frontend project which shows the content of Hotstar.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\\[4pt]
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://github.com/SweetyPandey789/Dice-challenge-game}{DICE CHALLENGE GAME}} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Game is based on dice roll ,this is a frontend project.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\\[4pt]
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://github.com/SweetyPandey789/Dice-challenge-game}{DICE CHALLENGE GAME}} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Game is based on dice roll ,this is a frontend project.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\\[4pt]
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{https://github.com/SweetyPandey789/CODING-JOURNEY}{CODING JOURNEY}} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Worked on Coding of C language of every part which deals with Array,String and many more.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\\[4pt]
+% EXTRA-CURRICULAR ACTIVITIES / LEADERSHIP ROLES
+\section{\textbf{EXTRA-CURRICULAR ACTIVITIES}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\href{}{National Cadet Corps(NCC)}} \\[4pt]
+\textbf{Google Developer Student Club Memeber(GDSC)}
+\\[4pt]
+\textbf{Zuno Student Campus Ambassador}
+\\[4pt]
+\textbf{Internshala Student Partner}
+ \\[4pt]
+\end{tabularx}
+
+%ADDITIONAL
+\section{\textbf{ADDITIONAL}}
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        
+        \item Technical Skills: C,Java,Python ,Flutter  
+        \item Language Skills: English 
+        , Hindi (Native)
+        
+    \end{itemize}
+\end{minipage}
+
+\end{document}
